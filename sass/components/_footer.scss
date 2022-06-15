@@ -1,0 +1,236 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  color: #ffffff;
+  background-color: var(--header-footer-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo-customers {
+  @media screen and(min-width:768px) {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__wrapper {
+  margin-right: 70px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and(min-width:1200px) {
+    text-align: start;
+    margin-right: 70px;
+  }
+}
+
+.logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--heading-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+.logo__first-part {
+  color: var(--accent-color);
+}
+
+.adress {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.adress__sity {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.contacts-footer {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+
+  & .contacts-footer__link:hover,
+  & .contacts-footer__link:focus {
+    color: #2196f3;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-footer__item {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.contacts-footer__link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers {
+  margin-right: 93px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.clients {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.soc-list__link--back-color {
+  background-color: #44454e;
+}
+
+.soc-list__icon--color {
+  fill: var(--heading-color);
+}
+
+.form {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.form__input {
+  width: 100%;
+  padding: 14px 0 14px 16px;
+
+  margin-bottom: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-subscribe {
+  position: relative;
+  padding: 10px 62px 10px 29px;
+  max-height: 50px;
+  align-items: flex-end;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.button-subscribe__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  bottom: 13px;
+}
