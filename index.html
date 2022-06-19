@@ -55,6 +55,7 @@
             </a>
           </li>
         </ul>
+
         <button type="button" class="button-open-mobile-menu">
           <svg class="" width="40" height="40">
             <use href="./images/icons/symbol-defs.svg#icon-open-menu"></use>
@@ -128,14 +129,10 @@
 
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">
-            Эффективные решения<br />для вашего бизнеса
-          </h1>
-          <button data-modal-open type="button" class="button">
-            Заказать услугу
-          </button>
-        </div>
+        <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+        <button data-modal-open type="button" class="button">
+          Заказать услугу
+        </button>
       </section>
 
       <section class="section-facilities">
@@ -248,12 +245,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list-item">
-              <img
-                srcset="./images/igor.jpg 1x, ./images/igor-2x.jpg 2x"
-                src="./images/igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor/igor-desc-1x.jpg 1x,
+                    ./images/igor/igor-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor/igor-tab-1x.jpg 1x,
+                    ./images/igor/igor-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor/igor-mob-1x.jpg 1x,
+                    ./images/igor/igor-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/igor/igor-desc-1x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="team__basement-foto">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__professions">Product Designer</p>
@@ -298,12 +317,31 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x"
-                src="./images/olga.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga/olga-desc-1x.jpg 1x,
+                    ./images/olga/olga-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga/olga-tab-1x.jpg 1x,
+                    ./images/olga/olga-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga/olga-mob-1x.jpg 1x,
+                    ./images/olga/olga-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/olga/olga-desc-1x.jpg" alt="Ольга Репина" />
+              </picture>
+
               <div class="team__basement-foto">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__professions">Frontend Developer</p>
@@ -348,12 +386,34 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                srcset="./images/nikolay.jpg 1x, ./images/nikolay-2x.jpg 2x"
-                src="./images/nikolay.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolay/nikolay-desc-1x.jpg 1x,
+                    ./images/nikolay/nikolay-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay/nikolay-tab-1x.jpg 1x,
+                    ./images/nikolay/nikolay-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay/nikolay-mob-1x.jpg 1x,
+                    ./images/nikolay/nikolay-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/nikolay/nikolay-desc-1x.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
+
               <div class="team__basement-foto">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__professions">Marketing</p>
@@ -398,12 +458,34 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                srcset="./images/michael.jpg 1x, ./images/michael-2x.jpg 2x"
-                src="./images/michael.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/michael/michael-desc-1x.jpg 1x,
+                    ./images/michael/michael-desc-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/michael/michael-tab-1x.jpg 1x,
+                    ./images/michael/michael-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/michael/michael-mob-1x.jpg 1x,
+                    ./images/michael/michael-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/michael/michael-desc-1x.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+
               <div class="team__basement-foto">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__professions">UI Designer</p>
@@ -696,18 +778,16 @@
               id="modal-check"
             />
             <label for="modal-check" class="form-modal__check-text">
-              <div class="modal-check__cont">
-                <span class="form-modal__icon-check">
-                  <svg class="form-modal__icon-checkbox" width="16" height="15">
-                    <use
-                      href="./images/icons/symbol-defs.svg#icon-checkbox"
-                    ></use>
-                  </svg>
-                </span>
-                <span class="form-modal__agreements"
-                  >Соглашаюсь с рассылкой и принимаю &nbsp;</span
-                >
-              </div>
+              <span class="form-modal__icon-check">
+                <svg class="form-modal__icon-checkbox" width="16" height="15">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-checkbox"
+                  ></use>
+                </svg>
+              </span>
+              <span class="form-modal__agreements"
+                >Соглашаюсь с рассылкой и принимаю &nbsp;</span
+              >
 
               <a href=""
                 ><span class="form-modal__agreements-text">
